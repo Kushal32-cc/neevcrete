@@ -1,0 +1,10 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "NEEVCRETE RMC"
+theme = "ananke"
+
+[params]
+  custom_css = ["css/override.css"]
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"] 

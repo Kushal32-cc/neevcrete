@@ -1,0 +1,853 @@
+/* Custom styles for NEEVCRETE website */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Base colors with high specificity */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #c8e3f2 !important; /* Light blue */
+    color: #2c5530 !important; /* Dark eco-green */
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Flex utilities */
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.items-center {
+    align-items: center;
+}
+
+/* Smooth transitions */
+.transition {
+    transition: all 0.3s ease !important;
+}
+
+/* Card hover effects */
+.hover\:scale-105:hover {
+    transform: scale(1.05) !important;
+    box-shadow: 0 4px 12px rgba(177, 216, 237, 0.15) !important;
+}
+
+/* Custom shadows */
+.shadow-1 {
+    box-shadow: 0 2px 4px rgba(177, 216, 237, 0.1) !important;
+}
+
+.hover-shadow-2:hover {
+    box-shadow: 0 3px 6px rgba(177, 216, 237, 0.16), 0 3px 6px rgba(177, 216, 237, 0.23) !important;
+}
+
+/* Custom colors */
+.bg-gray-50 {
+    background-color: #ffffff !important;
+    transition: background-color 0.3s ease !important;
+}
+
+.text-gray-600 {
+    color: #2c5530 !important; /* Dark eco-green */
+}
+
+.text-gray-700 {
+    color: #2c5530 !important; /* Dark eco-green */
+}
+
+/* Container styles */
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Grid system */
+.grid {
+    display: grid;
+    width: 100%;
+}
+
+.grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+@media (min-width: 768px) {
+    .md\:grid-cols-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+/* Spacing utilities */
+.gap-6 {
+    gap: 1.5rem;
+}
+
+.gap-8 {
+    gap: 2rem;
+}
+
+.mb-2 {
+    margin-bottom: 0.5rem;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+.mb-6 {
+    margin-bottom: 1.5rem;
+}
+
+.mb-8 {
+    margin-bottom: 2rem;
+}
+
+.mb-16 {
+    margin-bottom: 4rem;
+}
+
+.mt-2 {
+    margin-top: 0.5rem;
+}
+
+.mt-12 {
+    margin-top: 3rem;
+}
+
+.p-4 {
+    padding: 1rem;
+}
+
+.p-6 {
+    padding: 1.5rem;
+}
+
+.p-8 {
+    padding: 2rem;
+}
+
+.px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.p-12 {
+    padding: 3rem;
+}
+
+/* Typography */
+.text-center {
+    text-align: center;
+}
+
+.text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.text-3xl {
+    font-size: 1.875rem;
+}
+
+.text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+
+.text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+}
+
+.text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+.text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.font-light {
+    font-weight: 300;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+/* Rounded corners */
+.rounded-lg {
+    border-radius: 0.75rem;
+}
+
+/* Overflow handling */
+.overflow-hidden {
+    overflow: hidden;
+}
+
+/* Custom colors */
+.text-primary {
+    color: #2c5530 !important; /* Dark eco-green */
+}
+
+/* Card styles */
+.bg-white {
+    background-color: #ffffff !important;
+    transition: background-color 0.3s ease !important;
+}
+
+.bg-white:hover,
+.bg-gray-50:hover,
+.card:hover,
+.container:hover {
+    background-color: #c8e3f2 !important; /* Light blue */
+}
+
+/* Interactive elements */
+a, 
+.nested-links a,
+a:link,
+a:visited {
+    color: #4a7c59 !important; /* Medium eco-green */
+    transition: color 0.3s ease !important;
+}
+
+a:hover,
+a:focus,
+.nested-links a:hover {
+    color: #2c5530 !important; /* Dark eco-green */
+}
+
+button,
+.button,
+input[type="submit"] {
+    background-color: #4a7c59 !important; /* Medium eco-green */
+    color: #ffffff !important;
+    transition: all 0.3s ease !important;
+}
+
+button:hover,
+.button:hover,
+input[type="submit"]:hover {
+    background-color: #2c5530 !important; /* Dark eco-green */
+    transform: translateY(-2px) !important;
+}
+
+/* Borders */
+.border {
+    border-color: #e8f3ed !important; /* Very light eco-green */
+}
+
+/* Shadows */
+.shadow {
+    box-shadow: 0 2px 4px rgba(44, 85, 48, 0.1) !important;
+}
+
+/* Hover effects */
+.hover\:bg-green-50:hover {
+    background-color: #f0f7f4 !important; /* Light eco-green */
+}
+
+.hover\:text-green-700:hover {
+    color: #2c5530 !important; /* Dark eco-green */
+}
+
+/* Focus states */
+:focus {
+    outline: 2px solid #4a7c59 !important; /* Medium eco-green */
+    outline-offset: 2px !important;
+}
+
+/* Active states */
+:active {
+    background-color: #2c5530 !important; /* Dark eco-green */
+}
+
+/* Disabled states */
+:disabled {
+    background-color: #e8f3ed !important; /* Very light eco-green */
+    color: #9eb8a9 !important; /* Muted eco-green */
+}
+
+/* Container styles */
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Grid system */
+.grid {
+    display: grid;
+    width: 100%;
+}
+
+.grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+@media (min-width: 768px) {
+    .md\:grid-cols-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+/* Spacing utilities */
+.gap-6 {
+    gap: 1.5rem;
+}
+
+.gap-8 {
+    gap: 2rem;
+}
+
+.mb-2 {
+    margin-bottom: 0.5rem;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+.mb-6 {
+    margin-bottom: 1.5rem;
+}
+
+.mb-8 {
+    margin-bottom: 2rem;
+}
+
+.mb-16 {
+    margin-bottom: 4rem;
+}
+
+.mt-2 {
+    margin-top: 0.5rem;
+}
+
+.mt-12 {
+    margin-top: 3rem;
+}
+
+.p-4 {
+    padding: 1rem;
+}
+
+.p-6 {
+    padding: 1.5rem;
+}
+
+.p-8 {
+    padding: 2rem;
+}
+
+.px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.p-12 {
+    padding: 3rem;
+}
+
+/* Typography */
+.text-center {
+    text-align: center;
+}
+
+.text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.text-3xl {
+    font-size: 1.875rem;
+}
+
+.text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+
+.text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+}
+
+.text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+.text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.font-light {
+    font-weight: 300;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+/* Rounded corners */
+.rounded-lg {
+    border-radius: 0.75rem;
+}
+
+/* Overflow handling */
+.overflow-hidden {
+    overflow: hidden;
+}
+
+/* Custom colors */
+.text-primary {
+    color: #1a365d !important;
+}
+
+/* Card styles */
+.bg-white {
+    background-color: #fff !important;
+}
+
+/* Spacing */
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+.mb-6 {
+    margin-bottom: 1.5rem;
+}
+
+.mb-12 {
+    margin-bottom: 3rem;
+}
+
+.mb-20 {
+    margin-bottom: 5rem;
+}
+
+/* Grid */
+.grid {
+    display: grid;
+}
+
+.grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+@media (min-width: 768px) {
+    .md\:grid-cols-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+/* Max width utilities */
+.max-w-4xl {
+    max-width: 56rem;
+}
+
+.max-w-6xl {
+    max-width: 72rem;
+}
+
+/* Leading */
+.leading-relaxed {
+    line-height: 1.625;
+}
+
+/* Margin auto */
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Width utilities */
+.w-full {
+    width: 100%;
+}
+
+/* Custom colors */
+.mid-gray {
+    color: #4a4a4a;
+}
+
+/* Custom spacing */
+.mb5 {
+    margin-bottom: 4rem;
+}
+
+/* Custom typography */
+.lh-title {
+    line-height: 1.25;
+}
+
+.lh-copy {
+    line-height: 1.5;
+}
+
+.measure {
+    max-width: 30em;
+}
+
+/* Custom layout utilities */
+.cf:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.fn {
+    float: none;
+}
+
+@media screen and (min-width: 30em) {
+    .fl-ns {
+        float: left;
+    }
+    .fn-ns {
+        float: none;
+    }
+    .w-50-ns {
+        width: 50%;
+    }
+    .w-33-l {
+        width: 33.33333%;
+    }
+    .pr4-ns {
+        padding-right: 2rem;
+    }
+    .pr3-ns {
+        padding-right: 1rem;
+    }
+    .ph5-ns {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .pv5 {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+}
+
+/* Card styles */
+.br2 {
+    border-radius: .25rem;
+}
+
+.pa3 {
+    padding: 1rem;
+}
+
+.pa4 {
+    padding: 2rem;
+}
+
+/* Typography scale */
+.f2 {
+    font-size: 2.25rem;
+}
+
+.f3 {
+    font-size: 1.5rem;
+}
+
+.f4 {
+    font-size: 1.25rem;
+}
+
+.f5 {
+    font-size: 1rem;
+}
+
+.fw6 {
+    font-weight: 600;
+}
+
+.fw9 {
+    font-weight: 900;
+}
+
+/* Spacing utilities */
+.mb0 {
+    margin-bottom: 0;
+}
+
+.mb2 {
+    margin-bottom: .5rem;
+}
+
+.mb3 {
+    margin-bottom: 1rem;
+}
+
+.mb4 {
+    margin-bottom: 2rem;
+}
+
+.mt0 {
+    margin-top: 0;
+}
+
+.pt3 {
+    padding-top: 1rem;
+}
+
+/* Border utilities */
+.bt {
+    border-top-style: solid;
+    border-top-width: 1px;
+}
+
+.bw2 {
+    border-width: .25rem;
+}
+
+/* Flex utilities */
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+/* Width utilities */
+.w-100 {
+    width: 100%;
+}
+
+/* Padding utilities */
+.ph3 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* Logo styles */
+.br-100 {
+    border-radius: 100%;
+}
+
+.h3 {
+    height: 4rem;
+}
+
+.h4 {
+    height: 8rem;
+}
+
+.w3 {
+    width: 4rem;
+}
+
+.w4 {
+    width: 8rem;
+}
+
+.dib {
+    display: inline-block;
+}
+
+/* Centering utilities */
+.tc {
+    text-align: center;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+/* Custom colors */
+.b--light-gray {
+    border-color: #e2e8f0;
+}
+
+/* Max width utilities */
+.mw8 {
+    max-width: 64rem;
+}
+
+/* Border utilities */
+.bt {
+    border-top-style: solid;
+    border-top-width: 1px;
+}
+
+/* Card styles */
+.br2 {
+    border-radius: .25rem;
+}
+
+.pa3 {
+    padding: 1rem;
+}
+
+.pa4 {
+    padding: 2rem;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+/* Typography scale */
+.f2 {
+    font-size: 2.25rem;
+}
+
+.f3 {
+    font-size: 1.5rem;
+}
+
+.f4 {
+    font-size: 1.25rem;
+}
+
+.f5 {
+    font-size: 1rem;
+}
+
+.f6 {
+    font-size: .875rem;
+}
+
+.fw6 {
+    font-weight: 600;
+}
+
+.fw9 {
+    font-weight: 900;
+}
+
+/* Line heights */
+.lh-title {
+    line-height: 1.25;
+}
+
+.lh-copy {
+    line-height: 1.5;
+}
+
+/* Measure utilities */
+.measure {
+    max-width: 30em;
+}
+
+/* Layout utilities */
+.cf:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.fn {
+    float: none;
+}
+
+@media screen and (min-width: 30em) {
+    .fl-ns {
+        float: left;
+    }
+    .fn-ns {
+        float: none;
+    }
+    .w-50-ns {
+        width: 50%;
+    }
+    .w-33-l {
+        width: 33.33333%;
+    }
+    .pr4-ns {
+        padding-right: 2rem;
+    }
+    .pr3-ns {
+        padding-right: 1rem;
+    }
+    .ph5-ns {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .pv5 {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+}
+
+/* Flex utilities */
+.flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+/* Width utilities */
+.w-100 {
+    width: 100%;
+}
+
+/* Padding utilities */
+.ph3 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+} 
